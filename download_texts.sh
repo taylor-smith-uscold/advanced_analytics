@@ -5,16 +5,20 @@
 # https://taylor-smith-uscold.github.io/advanced_analytics/
 #
 # Usage:   bash download_texts.sh [output_dir]
-# Default output_dir is ./backup_advanced_analytics_readings
+# Default output_dir is ./advanced_analytics_readings
 #
 # Most primaries are author-published web books with no sanctioned PDF, so
-# this script fetches six PDFs and writes a linked reading list covering all
-# sixteen modules.
+# this script fetches the four Creative Commons PDFs and writes a linked
+# reading list covering all sixteen modules.
 #
 # LICENSING
 #   [CC]   Creative Commons; may be redistributed (check the variant).
 #   [FREE] Free to download, NOT licensed for redistribution. Link to the
 #          publisher page from your LMS rather than re-hosting the file.
+#
+# Nothing tagged [FREE] is downloaded -- the two such texts (ISLP and the
+# Sculley paper) are announced as links only, so the script never produces a
+# file its own licensing policy forbids you to re-host.
 
 set -uo pipefail
 
@@ -59,9 +63,9 @@ get "11" "CC" "angelopoulos_bates_conformal_prediction.pdf" \
   "https://arxiv.org/pdf/2107.07511" \
   "https://arxiv.org/abs/2107.07511"
 
-get "14" "FREE" "sculley_hidden_technical_debt_in_ml.pdf" \
-  "https://papers.nips.cc/paper_files/paper/2015/file/86df7dcfd896fcaf2674f757a2463eba-Paper.pdf" \
-  "https://papers.nips.cc/paper_files/paper/2015"
+# Sculley et al. (module 14) is [FREE]: readable at no cost via the NeurIPS
+# proceedings, but not licensed for redistribution. Link-only, same as ISLP.
+echo "  - 14        Sculley  [FREE] link-only, see https://papers.nips.cc/paper_files/paper/2015"
 
 get "15" "CC" "barocas_hardt_narayanan_fairness_and_ml.pdf" \
   "https://fairmlbook.org/pdf/fairmlbook.pdf" \
@@ -78,8 +82,9 @@ get "15" "CC" "gebru_datasheets_for_datasets.pdf" \
 cat > "$LIST" << 'MD_EOF'
 # Advanced Analytics — core reading list
 
-One primary reading per module. PDFs sit alongside this file; everything
-else is an author-published web book, linked here.
+One primary reading per module. The four Creative Commons PDFs sit alongside
+this file; everything else is an author-published web book or a free-to-read
+paper, linked here rather than mirrored.
 
 ## Arc I — Getting the question right
 
@@ -108,7 +113,7 @@ else is an author-published web book, linked here.
 | # | Module | Primary reading |
 |---|---|---|
 | 13 | Interpretability & Explanation | Molnar, *Interpretable Machine Learning* — <https://christophm.github.io/interpretable-ml-book/> |
-| 14 | Distribution Shift & Monitoring | Sculley et al., *Hidden Technical Debt in ML Systems* (PDF in this folder) |
+| 14 | Distribution Shift & Monitoring | Sculley et al., *Hidden Technical Debt in ML Systems* — <https://papers.nips.cc/paper_files/paper/2015/file/86df7dcfd896fcaf2674f757a2463eba-Paper.pdf> |
 | 15 | Fairness, Privacy & Governance | Barocas, Hardt & Narayanan, *Fairness and Machine Learning*, ch. 2–3 (PDF in this folder). Exercise templates: Mitchell et al., *Model Cards*; Gebru et al., *Datasheets for Datasets* (PDFs in this folder) |
 | 16 | Communicating Analysis | Wilke, *Fundamentals of Data Visualization*, ch. 16 and 29 — <https://clauswilke.com/dataviz/> |
 
@@ -117,13 +122,15 @@ else is an author-published web book, linked here.
 ISLP is free to download but not licensed for redistribution — link to
 <https://www.statlearning.com/> from the LMS rather than posting the PDF.
 The Sculley paper is free via NeurIPS proceedings; link rather than mirror.
-The remaining four PDFs are Creative Commons and may be re-hosted, subject
-to the specific licence variant.
+Neither is downloaded by `download_texts.sh`, and neither is committed.
+
+The four PDFs in this folder are Creative Commons and may be re-hosted,
+subject to the specific licence variant.
 MD_EOF
 
 echo ""
 echo "-----------------------------------------------------"
-echo "PDFs downloaded:   $ok / 5"
+echo "PDFs downloaded:   $ok / 4"
 echo "Failed:            $failed"
 echo ""
 echo "Reading list for all 16 modules: $LIST"
