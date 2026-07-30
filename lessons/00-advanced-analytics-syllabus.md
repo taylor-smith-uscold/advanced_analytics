@@ -4,19 +4,19 @@
 
 ---
 
-## Design principles
+## Principles
 
-1. **Every module answers a question an analyst is actually asked at work.** No topic appears because it's traditional.
-2. **Two registers per module.** A technical version for analysts with quantitative backgrounds, a plain-language version for everyone else. Same arguments, same failure modes, different machinery.
-3. **Every module ends with a failure-modes table.** Across the course these accumulate into a diagnostic index — the thing people reach for six months later when something looks wrong.
-4. **Causal thinking comes early.** It reframes everything downstream. Analysts who learn prediction first tend to spend years reading causal claims into correlational models.
-5. **Each module has one applied exercise on company data**, not a toy dataset.
+1. Modules are organized around questions analysts are actually asked at work, not around a taxonomy of methods. Nothing is included because it is traditional.
+2. Each module is written twice: a technical register for readers with quantitative backgrounds, and a plain-language register for everyone else. Both cover the same arguments and the same failure modes, with different machinery.
+3. Every module closes with a table of failure modes. Read across the course, these accumulate into a diagnostic index, which is what people tend to reach for months later when something looks wrong.
+4. Causal reasoning is introduced early, because it reframes everything downstream. Analysts who learn prediction first often spend years reading causal claims into correlational models.
+5. Each module carries one applied exercise on company data rather than a teaching dataset.
 
 ---
 
 ## Arc I — Getting the question right
 
-*Most failed analyses fail before any modeling happens.*
+These modules cover the work that happens before any model is fit, which is where most failed analyses go wrong.
 
 | # | Module | Core question | Key concepts | Builds on | Applied exercise |
 |---|---|---|---|---|---|
@@ -26,7 +26,7 @@
 
 ## Arc II — Getting the model right
 
-*The core statistical-learning material.*
+The core statistical-learning material, running from data preparation through validation and reporting.
 
 | # | Module | Core question | Key concepts | Builds on | Applied exercise |
 |---|---|---|---|---|---|
@@ -40,9 +40,9 @@
 | 11 | **Uncertainty & Inference** | What's the error bar? | Bootstrap; confidence vs prediction intervals; multiple testing (FWER, FDR); conformal prediction for distribution-free coverage | 7 | Add calibrated prediction intervals to an existing point-forecast model |
 | 12 | **Unsupervised Methods** | What structure is in here — and is it real? | PCA; k-means and its assumptions; density-based clustering; UMAP/t-SNE and what their distances don't mean; cluster validation and stability | 5 | Stress-test an existing segmentation: does it reproduce on a resample? |
 
-## Arc III — Getting it to survive contact with the business
+## Arc III — Surviving the business
 
-*Where deployed models and published analyses actually die.*
+What happens once a model or an analysis leaves the analyst's hands, and where deployed work tends to fail.
 
 | # | Module | Core question | Key concepts | Builds on | Applied exercise |
 |---|---|---|---|---|---|
@@ -53,9 +53,9 @@
 
 ---
 
-## Optional / domain-dependent modules
+## Optional modules
 
-Add based on what your teams actually do.
+These are scoped but not yet written. Add them according to the work your teams actually do.
 
 | Module | Add if | Key concepts |
 |---|---|---|
@@ -72,11 +72,11 @@ Add based on what your teams actually do.
 
 | Format | Detail |
 |---|---|
-| **Cadence** | One module per week, 16 weeks; or three intensive blocks by arc |
-| **Session shape** | 45 min discussion of the document (pre-read, not lectured) + 45 min working the exercise on company data |
-| **Registers** | Everyone gets the plain-language version; the technical version is the optional deeper read. Don't stream people — let them choose |
+| **Cadence** | One module per week over 16 weeks, or three intensive blocks by arc |
+| **Session shape** | 45 minutes discussing the document, which is pre-read rather than lectured, followed by 45 minutes working the exercise on company data |
+| **Registers** | Everyone receives the plain-language version; the technical version is an optional deeper read. Let people choose rather than assigning them a track |
 | **Assessment** | The applied exercises, reviewed by peers. No exams |
-| **Capstone** | Take one live business question end-to-end: frame it, identify the causal structure, design the test or model, validate it honestly, report it with uncertainty, and present it |
+| **Capstone** | Take one live business question end to end: frame it, identify the causal structure, design the test or model, validate it honestly, report it with uncertainty, and present it |
 
 ---
 
@@ -103,9 +103,9 @@ Add based on what your teams actually do.
 
 ---
 
-## Course file manifest
+## Course files
 
-Every module has two documents in the same folder: a **technical** register (for readers with quantitative backgrounds) and a **plain-language** register (mathematical requirements minimized). Both cover the same arguments and the same failure modes.
+Every module has two documents in the same folder: a technical register, for readers with quantitative backgrounds, and a plain-language register, in which mathematical requirements are minimized. Both cover the same arguments and the same failure modes.
 
 | # | Module | Files |
 |---|---|---|
@@ -126,14 +126,12 @@ Every module has two documents in the same folder: a **technical** register (for
 | 15 | Fairness, Privacy & Governance | `15-fairness-privacy-governance-{technical, plain-language}.md` |
 | 16 | Communicating Analysis | `16-communicating-analysis-{technical, plain-language}.md` |
 
-The six optional modules listed above are not yet written; they are scoped for teams whose work requires them.
+### Recurring themes
 
-### Threads that run across the course
+Five ideas recur across the sixteen modules. Naming them in session is what makes the material cohere into one argument rather than sixteen topics.
 
-Point these out explicitly — they are what make the modules read as one argument rather than sixteen topics.
-
-- **Anything you optimize against stops being a measurement.** Test sets (06), peeking at experiments (03), segment fishing (03, 11), choosing an outlier rule after seeing results (04), tuning a threshold on test data (07).
-- **Anything computed from data belongs inside the fold.** Scaling (05), imputation and encoding (04), feature selection (06), class balancing (04).
-- **Shrinkage recurs in four places.** Ridge and lasso (05), leaf-weight penalties in boosting (08), partial pooling (09), and smoothed target encoding (04).
-- **Prediction is not intervention.** Established in 02, reinforced in 13 (importance is not causation) and 14 (feedback loops).
-- **State your assumptions in the summary, not the appendix.** 02, 11, 15, 16.
+- Anything you optimize against stops being a measurement. Test sets (06), peeking at experiments (03), segment fishing (03, 11), choosing an outlier rule after seeing results (04), tuning a threshold on test data (07).
+- Anything computed from data belongs inside the fold. Scaling (05), imputation and encoding (04), feature selection (06), class balancing (04).
+- Shrinkage appears in four guises. Ridge and lasso (05), leaf-weight penalties in boosting (08), partial pooling (09), and smoothed target encoding (04).
+- Prediction is not intervention. Established in 02, reinforced in 13 (importance is not causation) and 14 (feedback loops).
+- Assumptions belong in the summary, not the appendix. 02, 11, 15, 16.
