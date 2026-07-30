@@ -1,67 +1,60 @@
 # Advanced Analytics — Course Reader
 
-A single-file, fully self-contained course reader. All CSS, JavaScript (marked + KaTeX),
-web fonts, and course content are inlined into `index.html` — there are no external
-requests, so it works offline and needs no build step.
+An applied program in statistical learning, machine learning, and decision-oriented analysis, delivered as a single self-contained web reader.
 
-## Files
+**Read it here:** https://taylor-smith-uscold.github.io/advanced_analytics/
 
-| File | Purpose |
-| --- | --- |
-| `index.html` | The entire site. |
-| `.nojekyll` | Tells GitHub Pages to serve files as-is instead of running Jekyll. **Required** — see below. |
-| `README.md` | This file. Not served as a page; safe to keep or delete. |
+## About
 
-### Why `.nojekyll` matters here
+Sixteen modules, each written twice. Every topic appears in a **technical** register — the mathematics, assumptions, and failure modes — and in a **plain-language** register that explains the same idea to a non-specialist stakeholder. A switch in the interface moves between them, so the reader can meet the material at whichever level the moment calls for, and see how one translates into the other.
 
-GitHub Pages runs every push through Jekyll by default, and Jekyll treats `{{ ... }}` as
-Liquid template syntax. The bundled KaTeX source contains several literal `{{` sequences
-inside its LaTeX macro definitions. Without `.nojekyll`, the build will either fail or
-silently mangle those macros, breaking math rendering. The empty `.nojekyll` file at the
-repository root disables Jekyll entirely.
+The modules are organized into three arcs:
 
-## Publishing
+| Arc | Focus | Modules |
+| --- | --- | --- |
+| I | Getting the question right | 01–03 |
+| II | Getting the model right | 04–12 |
+| III | Surviving the business | 13–16 |
 
-### Option A — command line
+Arc I covers problem framing and metric design, causal inference, and experimentation. Arc II runs from data quality and feature construction through regularization, cross-validation, performance evaluation, gradient boosting, hierarchical models, forecasting, uncertainty, and unsupervised methods. Arc III turns outward: interpretability, distribution shift and monitoring, fairness and governance, and communicating analysis.
 
-```bash
-cd path/to/this/folder
-git init -b main
-git add -A                      # -A so the dotfile .nojekyll is included
-git commit -m "Publish course reader"
-git remote add origin https://github.com/USERNAME/REPO.git
-git push -u origin main
+Every module opens with the question it exists to answer — *What decision is this analysis for?*, and so on — because the framing is the point.
+
+## Features
+
+- Two registers per module, switchable in place
+- Full-text search across every document
+- LaTeX math rendered with KaTeX
+- Light and dark themes
+- Reading preferences persist between visits
+- Responsive down to mobile widths
+
+## Structure
+
+```
+index.html          reader interface — styles, scripts, and fonts, inlined
+lessons/            lesson prose, one markdown file per document
+.nojekyll           disables Jekyll processing on GitHub Pages
 ```
 
-Then in the repository on GitHub: **Settings → Pages → Build and deployment**, set
-*Source* to **Deploy from a branch**, *Branch* to **main** and folder to **/ (root)**, and
-save. The first deploy takes a minute or two.
+Lesson text lives in `lessons/` as plain markdown, named `NN-topic-register.md`. To revise a lesson, edit its file and commit — nothing needs rebuilding. To add one, drop the file in `lessons/` and add a matching entry to the `DATA` object in `index.html`, where the `file` field carries the filename stem.
 
-### Option B — web upload
+## Technical notes
 
-Create a new repository, choose **uploading an existing file**, and drag in `index.html`
-and `README.md`. The browser uploader will not accept a dotfile, so add `.nojekyll`
-separately: **Add file → Create new file**, name it `.nojekyll`, leave the body empty, and
-commit. Then configure Settings → Pages as above.
+There is no build step and no server-side code. The interface is a single HTML file with all styles, scripts, and web fonts inlined; lesson files are fetched at load and indexed for search.
 
-## Your URL
+Because the reader fetches its content at runtime, opening `index.html` directly from disk will not work — browsers block `fetch` on `file://` URLs. To preview locally, serve the directory over HTTP:
 
-- Normal repository: `https://USERNAME.github.io/REPO/`
-- Repository named exactly `USERNAME.github.io`: `https://USERNAME.github.io/`
+```
+python3 -m http.server
+```
 
-Because everything is inlined and no links are absolute, the page works at either address,
-in a subdirectory, or opened straight from disk — no path changes needed.
+Then visit `http://localhost:8000/`.
 
-## Notes
+The empty `.nojekyll` file is required for GitHub Pages: the bundled KaTeX source contains brace sequences that Jekyll's template engine would otherwise consume, breaking math rendering.
 
-- **Public vs. private.** On a free plan, Pages only publishes from public repositories.
-  Private-repository Pages requires a paid plan.
-- **Saved state.** Theme and register preferences are stored in `localStorage` under the
-  `aa:` prefix. This is scoped per origin, so every project site under
-  `USERNAME.github.io` shares one store — a concern only if you publish another app that
-  writes the same keys.
-- **Updating.** Commit a new `index.html` and push; the site rebuilds automatically. Do a
-  hard refresh (Cmd/Ctrl+Shift+R) if you still see the old version — Pages sets a short
-  cache on HTML, and browsers hold onto a 1.2 MB document eagerly.
-- **Custom domain.** Add a file named `CNAME` at the root containing only your domain
-  (e.g. `reader.example.com`), then point a CNAME DNS record at `USERNAME.github.io`.
+Reading preferences are stored in `localStorage` under the `aa:` prefix.
+
+## Deploying
+
+Push to a repository and enable GitHub Pages under **Settings → Pages**, selecting the branch and `/ (root)` as the source. Include `.nojekyll` in the commit — GitHub's web uploader skips dotfiles, so create it through **Add file → Create new file** if you are not using Git directly.
