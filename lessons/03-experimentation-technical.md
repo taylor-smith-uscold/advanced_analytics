@@ -1,6 +1,6 @@
 # Designing Tests That Can Be Trusted: Experimentation and A/B Testing
 
-*A guide for someone who has thought about counting statistics, systematic checks, and blind analysis.*
+*Module 3 — technical register. For readers who have thought about counting statistics, systematic checks, and blind analysis.*
 
 ---
 

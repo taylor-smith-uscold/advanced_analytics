@@ -1,6 +1,6 @@
 # Scaling, Regularization, and Tuning: A Plain-Language Guide
 
-*What these ideas are actually for, why they exist, and how they connect — no heavy math required.*
+*Module 5 — plain-language register. What these ideas are actually for, why they exist, and how they connect — no heavy math required.*
 
 ---
 

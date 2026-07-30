@@ -189,5 +189,5 @@ If a demand forecast drives inventory, and inventory constrains sales, then your
 - Hyndman & Athanasopoulos, *Forecasting: Principles and Practice* — free online, the standard reference, with R and Python companions. Chapters 3 (baselines and evaluation), 6 (decomposition), 8 (ETS), 9 (ARIMA), 11 (hierarchical).
 - Makridakis, Spiliotis & Assimakopoulos on the M4 and M5 competitions — large-scale empirical evidence on what actually works; the finding that combinations and simple methods perform strongly is worth internalizing.
 - Wickramasuriya, Athanasopoulos & Hyndman (2019) — MinT optimal reconciliation.
-- Stefan Hyndman's blog posts on why MAPE misbehaves — short and convincing.
+- Rob Hyndman's blog posts on why MAPE misbehaves — short and convincing.
 - Petropoulos et al. (2022), "Forecasting: theory and practice" — a broad survey of current methods.

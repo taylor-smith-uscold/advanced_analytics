@@ -1,6 +1,6 @@
 # Estimating What You Can't Measure Directly: Cross-Validation
 
-*A guide for someone comfortable with resampling, systematic errors, and blind analysis.*
+*Module 6 — technical register. For readers comfortable with resampling, systematic errors, and blind analysis.*
 
 ---
 
@@ -195,7 +195,7 @@ This tells you *which* intervention to try, which is worth far more than another
 
 ---
 
-## 9a. Failure modes
+## 10. Failure modes
 
 | Symptom | Likely cause |
 |---|---|
@@ -211,7 +211,7 @@ This tells you *which* intervention to try, which is worth far more than another
 
 ---
 
-## 10. Practical recipe
+## 11. Practical recipe
 
 1. **Split off a test set first**, before you look at anything. Put it away.
 2. **Decide what a "new sample" means** at deployment — new row, new subject, new time period, new site. Choose the split type to match: stratified, grouped, or temporal.
@@ -225,7 +225,7 @@ This tells you *which* intervention to try, which is worth far more than another
 
 ---
 
-## 11. Further reading
+## 12. Further reading
 
 - Hastie, Tibshirani & Friedman, *The Elements of Statistical Learning*, ch. 7 — optimism, effective degrees of freedom, and the "wrong way / right way" feature-selection example in §7.10.2, which is worth reading even if you read nothing else.
 - Arlot & Celisse (2010), "A survey of cross-validation procedures for model selection" — thorough and rigorous.

@@ -1,6 +1,6 @@
 # Explaining a Model: A Plain-Language Guide
 
-*Module 13 — plain-language register.*
+*Module 13 — plain-language register. How to explain what a model is doing, and what those explanations don't mean.*
 
 ---
 

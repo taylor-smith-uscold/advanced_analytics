@@ -57,7 +57,11 @@ Mitigations: permute correlated features as a *group*; or use conditional permut
 
 ## 4. Partial dependence, ICE, ALE
 
-**PDP.** Average the model's prediction over the dataset while sweeping one feature: $\hat f_j(x) = \frac1n\sum_i \hat f(x, x_{-i})$.
+**PDP.** Average the model's prediction over the dataset while sweeping one feature. Writing $x_{-j}^{(i)}$ for observation $i$'s values on all *other* features, the partial dependence at value $v$ is
+
+$$\mathrm{PD}_j(v) = \frac1n\sum_{i=1}^{n} \hat f\big(v,\ x_{-j}^{(i)}\big).$$
+
+Each observation is evaluated with its own covariates but with feature $j$ overwritten by $v$, and the results are averaged.
 
 The assumption is **independence between $x_j$ and the rest**. Under correlation, the average includes impossible combinations, and the curve is a description of model behavior in regions with no data.
 

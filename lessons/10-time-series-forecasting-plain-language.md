@@ -1,6 +1,6 @@
 # Forecasting: A Plain-Language Guide to Time Series
 
-*Module 10 — plain-language register.*
+*Module 10 — plain-language register. How to forecast, and how to tell whether the forecast is any good.*
 
 ---
 
@@ -54,6 +54,19 @@ Standard tools do this automatically (look up "STL decomposition" — one line o
 If the seasonal swings get *bigger* as the series grows — December is +200 when sales are 1,000, and +2,000 when sales are 10,000 — then take the log of the series first. That converts "swings proportional to size" into "swings of constant size," which nearly every method handles better.
 
 This is common. Anything growing multiplicatively behaves this way.
+
+### Series that won't sit still
+
+Most forecasting methods work best on a series that is, loosely, *statistically settled*: no persistent drift, roughly constant amount of wobble, patterns that mean the same thing in 2019 and 2026. The technical word is **stationary**, and almost no real business series is.
+
+The two standard remedies are worth recognizing when you see them in someone's method write-up:
+
+- **Differencing** — modeling the change from one period to the next rather than the level itself. A series that climbs steadily isn't settled, but its month-to-month *changes* often are. The seasonal version subtracts the same month last year, which strips out an annual pattern the same way.
+- **Logging** — the transformation described just above, which handles swings that grow with the level.
+
+Two things to watch for. First, differencing more than the minimum needed is a real error, not just wasted effort: it injects artificial jitter and makes forecasts less certain rather than more. Second, differencing changes what the model is predicting, so the forecasts have to be converted back to levels before anyone reads them — a step that occasionally goes wrong silently.
+
+The practical version: your tooling will usually decide how much differencing to apply automatically, and it's usually right. What you should insist on is that someone plotted the series first and can say in words why it needed the treatment it got.
 
 ### Watch for multiple seasonal patterns
 

@@ -1,6 +1,6 @@
 # Running Tests You Can Trust: A Plain-Language Guide to Experimentation
 
-*How to design an A/B test that gives you a real answer — and how to spot one that doesn't.*
+*Module 3 — plain-language register. How to design an A/B test that gives you a real answer, and how to spot one that doesn't.*
 
 ---
 
@@ -87,6 +87,8 @@ Think about why. If your test is too small, the only way anything crosses the si
 At the power levels typical of hurried tests, a "significant" result is on average about **twice** the true effect, and has a real chance of pointing the wrong direction entirely.
 
 **This is why experimentation programs report gains that never show up in the annual numbers.** Teams ship the biggest-looking winners. The biggest-looking winners are disproportionately the noisiest measurements. Add up a year of exaggerated wins and the total is a number nobody can find in the P&L.
+
+This pattern has a name worth knowing, because you'll hear it used: the **winner's curse**. Whenever you select the best-looking result out of many noisy ones, you're selecting partly for genuine quality and partly for a lucky draw — and the lucky part doesn't repeat. It's the same reason the star of last quarter's leaderboard regresses this quarter, and the same reason the best-performing fund rarely stays best.
 
 The lesson: a small test that produces a big significant win is *more* suspicious, not less.
 

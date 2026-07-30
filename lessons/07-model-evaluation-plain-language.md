@@ -1,6 +1,6 @@
 # Measuring Success: Accuracy, ROC Curves, and What They Hide
 
-*A plain-language guide to reporting how well a model works — no heavy math required.*
+*Module 7 — plain-language register. How to report how well a model works — no heavy math required.*
 
 ---
 
@@ -190,6 +190,8 @@ The weather forecast is the intuitive example. When a forecaster says "30% chanc
 
 **To fix:** there are standard post-hoc corrections (Platt scaling and isotonic regression) that learn a mapping from your model's raw scores to honest probabilities. Fit them on held-out data, never on the training data.
 
+**To score it in one number:** the two standard measures are the **Brier score** (the average squared gap between the predicted probability and what actually happened) and **log loss** (which punishes confident mistakes far more harshly). Both have a property worth knowing about: the only way to score well is to report what you actually believe. Shading your probabilities toward the middle to look cautious, or toward the extremes to look decisive, makes your score worse either way. That's exactly what you want from a scoring rule, and it's why these two are used rather than something more intuitive.
+
 A nice detail that clarifies the whole distinction: these corrections **don't change AUC at all**. They only stretch and squeeze the scores without reordering them. They fix the numbers, not the ranking — because those were always two separate things.
 
 ---
@@ -260,6 +262,16 @@ The habit worth building: **no number without an uncertainty, and no claim that 
 | Model beats everything by a wide margin | Data leakage, until proven otherwise |
 | Confident predictions that are often wrong | Miscalibration; apply a correction on held-out data |
 | Test score much worse than validation | Leakage in your validation setup, or the test data is genuinely different |
+
+---
+
+## Putting it all together
+
+**Three things to remember if you remember nothing else:**
+
+- **Every single-number score is a summary that hides something specific.** Accuracy hides the class balance. AUC hides the operating point and how many false alarms you'll actually field. Precision hides everything you correctly let through. Pick the one that matches the decision, and say what you dropped.
+- **A number with no baseline and no error bar isn't a result.** 85% accuracy means nothing until you know what predicting the majority class would have scored, and how much a different test sample would have moved it.
+- **Ranking well and being right about probabilities are two different achievements.** A model can do the first perfectly while failing the second completely, and only one of those matters if someone downstream multiplies your probability by a dollar amount.
 
 ---
 

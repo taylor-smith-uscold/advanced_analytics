@@ -1,6 +1,6 @@
 # Cross-Validation: How to Know If Your Model Actually Works
 
-*A plain-language guide — no heavy math required.*
+*Module 6 — plain-language register. How to tell whether a model will hold up on data it hasn't seen — no heavy math required.*
 
 ---
 

@@ -68,7 +68,7 @@ Note also the distinction between **disparate treatment** (differential treatmen
 
 ## 4. Privacy
 
-**Identifier removal is not anonymization.** Sweeney's result — that ZIP, birth date, and sex uniquely identify a large majority of the US population — is the canonical demonstration, and re-identification from behavioral data (Netflix, mobility traces) is easier still. Assume any rich per-person dataset is re-identifiable.
+**Identifier removal is not anonymization.** Sweeney's result — that ZIP code, birth date, and sex together uniquely identify the large majority of the US population — is the canonical demonstration. (Her original estimate was 87%; later replications on other census data put it nearer two-thirds, which does not change the conclusion.) Re-identification from behavioral data — the Netflix Prize ratings, mobility traces, browsing histories — is easier still, because rich per-person records are close to unique by construction. Assume any such dataset is re-identifiable.
 
 | Technique | Guarantee | Limitation |
 |---|---|---|

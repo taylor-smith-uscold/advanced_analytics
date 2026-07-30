@@ -1,6 +1,6 @@
 # Finding Groups Without Answers: A Plain-Language Guide to Unsupervised Methods
 
-*Module 12 — plain-language register.*
+*Module 12 — plain-language register. How to look for groups in data, and how to tell whether they're real.*
 
 ---
 

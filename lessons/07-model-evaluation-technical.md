@@ -1,6 +1,6 @@
 # Reporting Model Performance: Confusion Matrices, ROC, and Calibration
 
-*A guide for someone who thinks in efficiency and purity, signal and background, and error bars.*
+*Module 7 — technical register. For readers who think in efficiency and purity, signal and background, and error bars.*
 
 ---
 
@@ -137,7 +137,7 @@ It's also a trap for deployment. Consider 1,000,000 negatives, 1,000 positives, 
 Plot **precision against recall** over the same threshold sweep. This does depend on prevalence — deliberately.
 
 - The baseline for a random classifier is a horizontal line at $y = $ prevalence, not a diagonal. Always draw it; a PR curve without its baseline is uninterpretable.
-- The summary statistic is **average precision** (the area under the PR curve, computed as a weighted mean of precisions at each threshold).
+- The summary statistic is **average precision**: the mean of the precisions attained at each threshold, weighted by the increase in recall that threshold buys. It is often described loosely as "the area under the PR curve," but it is deliberately *not* the trapezoidal area — trapezoidal interpolation between PR points is optimistic, because the PR curve is not linear between operating points. Prefer average precision to a trapezoidal AUPRC.
 
 For rare positives, PR curves are far more informative than ROC, because they're sensitive to exactly the thing ROC hides: the flood of false positives from a large negative class. The rule of thumb: **if the positive class is rare and it's the class you care about, lead with the PR curve.**
 
@@ -220,19 +220,7 @@ The habit to import from physics: **no number without an uncertainty, and no com
 
 ---
 
-## 8. A reporting checklist
-
-1. **State the baseline.** Majority class for classification, mean predictor for regression. Every metric is only interpretable relative to it.
-2. **State the class balance.** Without prevalence, precision and accuracy can't be interpreted.
-3. **Report a threshold-free curve and a fixed operating point.** AUC or average precision for model quality; precision/recall at your chosen threshold for what deployment looks like.
-4. **Show the confusion matrix.** It contains more information than any scalar derived from it.
-5. **Justify the threshold** in terms of costs, and say what they are.
-6. **Check calibration** if any downstream decision uses the probability as a number.
-7. **Quote uncertainties**, and don't report more digits than they support.
-8. **Say what the test set was** — how it was split, whether it's temporally or demographically distinct, and whether it was used more than once.
-9. **Break performance down by subgroup.** Aggregate metrics hide failures concentrated in specific populations, which is both a scientific and an ethical problem.
-
-## 8a. Failure modes
+## 8. Failure modes
 
 | Symptom | What's actually going on |
 |---|---|
@@ -245,7 +233,21 @@ The habit to import from physics: **no number without an uncertainty, and no com
 
 ---
 
-## 9. Further reading
+## 9. Practical recipe: a reporting checklist
+
+1. **State the baseline.** Majority class for classification, mean predictor for regression. Every metric is only interpretable relative to it.
+2. **State the class balance.** Without prevalence, precision and accuracy can't be interpreted.
+3. **Report a threshold-free curve and a fixed operating point.** AUC or average precision for model quality; precision/recall at your chosen threshold for what deployment looks like.
+4. **Show the confusion matrix.** It contains more information than any scalar derived from it.
+5. **Justify the threshold** in terms of costs, and say what they are.
+6. **Check calibration** if any downstream decision uses the probability as a number.
+7. **Quote uncertainties**, and don't report more digits than they support.
+8. **Say what the test set was** — how it was split, whether it's temporally or demographically distinct, and whether it was used more than once.
+9. **Break performance down by subgroup.** Aggregate metrics hide failures concentrated in specific populations, which is both a scientific and an ethical problem.
+
+---
+
+## 10. Further reading
 
 - Fawcett (2006), "An introduction to ROC analysis" — the standard readable treatment; covers ROC convex hulls and iso-cost lines.
 - Saito & Rehmsmeier (2015), "The precision-recall plot is more informative than the ROC plot when evaluating binary classifiers on imbalanced datasets" — the title is the argument, and it's well demonstrated.

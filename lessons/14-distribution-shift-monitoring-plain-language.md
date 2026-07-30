@@ -1,6 +1,6 @@
 # Is It Still Working? A Plain-Language Guide to Monitoring Models
 
-*Module 14 — plain-language register.*
+*Module 14 — plain-language register. How to tell whether a model that worked is still working.*
 
 ---
 

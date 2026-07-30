@@ -1,6 +1,6 @@
 # Conditioning, Priors, and Cutoffs: Scaling and Regularization in Linear Models
 
-*A guide for someone who already thinks in units, normal modes, and Lagrange multipliers.*
+*Module 5 — technical register. For readers who already think in units, normal modes, and Lagrange multipliers.*
 
 ---
 
@@ -236,7 +236,7 @@ Practical notes:
 
 ---
 
-## 6a. Failure modes
+## 7. Failure modes
 
 | Symptom | Likely cause |
 |---|---|
@@ -252,7 +252,7 @@ Practical notes:
 
 ---
 
-## 7. How it all fits together
+## 8. How it all fits together
 
 $$\text{units} \;\longrightarrow\; \text{scaling} \;\longrightarrow\; \text{meaning of } \Omega(\beta) \;\longrightarrow\; \text{choice of } \lambda \;\longrightarrow\; \text{effective df} \;\longrightarrow\; \text{bias--variance}$$
 
@@ -262,7 +262,9 @@ $$\text{units} \;\longrightarrow\; \text{scaling} \;\longrightarrow\; \text{mean
 - **Regularization is a cutoff.** Ridge is an explicit low-pass filter on the data's normal modes, with $\sqrt\lambda$ as the cutoff. Effective degrees of freedom is the continuous parameter count that results.
 - **Tuning is measurement.** The cutoff isn't given by theory, so you measure it out-of-sample — with the same discipline about not peeking that you'd apply to a blind analysis.
 
-### A workable default recipe
+---
+
+## 9. Practical recipe
 
 1. Look at each feature's distribution. Log-transform the ones spanning decades.
 2. Build a pipeline: `StandardScaler` → `ElasticNet` (or `Ridge` if you don't need sparsity).
@@ -272,7 +274,7 @@ $$\text{units} \;\longrightarrow\; \text{scaling} \;\longrightarrow\; \text{mean
 
 ---
 
-## 8. Further reading
+## 10. Further reading
 
 - Hastie, Tibshirani & Friedman, *The Elements of Statistical Learning*, ch. 3 — the standard reference; the SVD treatment of ridge in §3.4.1 is where the spectral-filter picture above comes from.
 - Zou & Hastie (2005), "Regularization and variable selection via the elastic net" — the grouping effect, derived properly.

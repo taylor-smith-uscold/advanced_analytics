@@ -58,7 +58,7 @@ The second version prevents the base-rate error rather than merely providing the
 
 If your interval is ±4 points, report "about 62%," not "61.7431%." Reporting digits beyond your precision is a false claim about the quality of your evidence, and technically literate readers will notice.
 
-A useful rule: **round the estimate to roughly one-tenth of the interval width.** Interval of ±4 → nearest 0.5. Interval of ±0.2 → nearest 0.05.
+A useful rule: **round to roughly a tenth of the interval's half-width.** ±4 → nearest 0.5. ±0.2 → nearest 0.02. The point is that the last digit you print should be a digit the data can actually distinguish.
 
 ### Say what the interval doesn't cover
 

@@ -1,6 +1,6 @@
 # Is the Data Telling You What You Think? A Plain-Language Guide to Data Quality and Features
 
-*Module 4 — plain-language register.*
+*Module 4 — plain-language register. How to tell whether your data means what you think it means.*
 
 ---
 

@@ -1,6 +1,6 @@
 # What Is This Analysis For? A Plain-Language Guide to Framing and Metrics
 
-*Module 1 — plain-language register.*
+*Module 1 — plain-language register. What an analysis is for, and how to choose what to measure.*
 
 ---
 

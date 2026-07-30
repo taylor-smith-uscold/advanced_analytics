@@ -1,6 +1,6 @@
 # Correlation, Intervention, and Identification: Causal Inference
 
-*A guide for someone who understands the difference between observing a system and perturbing it.*
+*Module 2 — technical register. For readers who understand the difference between observing a system and perturbing it.*
 
 ---
 
@@ -116,7 +116,7 @@ Each strategy buys identification with a different assumption. Choose based on w
 
 **Methods:**
 - **Regression adjustment.** Include $Z$ in an outcome model. Sensitive to functional form.
-- **Propensity scores.** Model $e(Z) = P(D=1\mid Z)$, then match, stratify, or weight by $1/e$ (IPW). The key result (Rosenbaum & Rubin) is that conditioning on the *scalar* $e(Z)$ suffices — a dimension-reduction that makes high-dimensional adjustment tractable.
+- **Propensity scores.** Model $e(Z) = P(D=1\mid Z)$, then match, stratify, or weight (IPW: treated units by $1/e(Z)$, controls by $1/(1-e(Z))$). The key result (Rosenbaum & Rubin) is that conditioning on the *scalar* $e(Z)$ suffices — a dimension-reduction that makes high-dimensional adjustment tractable. Note that the weights blow up as $e(Z)$ approaches 0 or 1, which is the same overlap problem below arriving as variance rather than as bias.
 - **Doubly robust / AIPW.** Combine an outcome model and a propensity model; consistent if *either* is correctly specified. Strictly better than betting on one.
 
 **Check overlap.** Plot the propensity score distributions by treatment group. If they barely overlap, there's no comparable control for your treated units, and any estimate is extrapolation dressed as inference. Trim to the common support and say that you did — it changes your estimand to something local, which is honest.
@@ -158,7 +158,9 @@ Three assumptions:
 
 **The physical intuition:** an instrument is an external drive that couples to the system through exactly one channel. You wiggle $Z$, watch $Y$ respond, and attribute the response to the one path that exists. If the drive couples to a second mode you didn't account for, your inferred coupling constant is contaminated — and nothing in the response tells you that happened.
 
-**Weak instruments are dangerous, not merely inefficient.** When relevance is marginal (rule of thumb: first-stage $F < 10$), the 2SLS estimator is biased toward OLS and its confidence intervals badly undercover. A weak instrument gives you a confidently wrong answer.
+**Weak instruments are dangerous, not merely inefficient.** When relevance is marginal, the 2SLS estimator is biased toward OLS and its confidence intervals badly undercover. A weak instrument gives you a confidently wrong answer.
+
+The familiar rule of thumb is a first-stage $F > 10$, and it is worth knowing that this bar is now understood to be far too low: subsequent work on the distribution of the first-stage $F$ shows that conventional 2SLS inference requires very much larger values before it is trustworthy. Treat $F$ near 10 as a warning, not a clearance, and prefer inference procedures that are robust to weak identification (Anderson–Rubin confidence sets) when the instrument is not overwhelmingly strong.
 
 **Estimand:** IV recovers LATE — the effect on *compliers*, the subpopulation the instrument actually moves. If compliers are unrepresentative, LATE is not ATE, and the distinction is often material.
 

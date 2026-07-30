@@ -45,7 +45,7 @@ The distinction is not decorative. High earners declining to state income is MNA
 
 | Method | Notes |
 |---|---|
-| **Complete-case deletion** | Unbiased only under MCAR. Discards data fast in wide tables — with 20 features at 5% missing each, over half the rows go |
+| **Complete-case deletion** | Unbiased only under MCAR. Discards data fast in wide tables — with 20 features independently 5% missing, only $0.95^{20} \approx 36\%$ of rows survive |
 | **Mean/median imputation** | Fast, and it distorts: shrinks variance, attenuates correlations, creates a spike at the mean |
 | **Model-based (MICE, kNN, iterative)** | Preserves relationships far better; standard choice under MAR |
 | **Multiple imputation** | Generate $m$ completed datasets, analyze each, pool via Rubin's rules. The only common approach that propagates imputation uncertainty into your standard errors |

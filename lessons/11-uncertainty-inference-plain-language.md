@@ -1,6 +1,6 @@
 # How Sure Are We? A Plain-Language Guide to Uncertainty
 
-*Module 11 — plain-language register.*
+*Module 11 — plain-language register. What an error bar is, and what it doesn't cover.*
 
 ---
 
@@ -98,8 +98,8 @@ Test 20 things at the usual threshold when nothing is really going on, and you'l
 
 Standard corrections:
 
-- **Holm's method** — when any single false alarm is costly. Strict. (Use this rather than the better-known Bonferroni; it's strictly better and just as easy.)
-- **Benjamini–Hochberg** — when you're screening lots of candidates and can tolerate a known fraction of false leads. Much more sensitive.
+- **Holm's method** — when any single false alarm is costly. Strict. (Use this rather than the better-known Bonferroni; it's strictly better and just as easy.) Methods of this kind control what's called the *family-wise error rate*: the chance of making **even one** false claim anywhere in the set.
+- **Benjamini–Hochberg** — when you're screening lots of candidates and can tolerate a known fraction of false leads. Much more sensitive. This one controls the *false discovery rate*: not the chance of any error, but the expected **share** of your flagged findings that are wrong. Accepting that one in twenty of your leads is spurious is often a perfectly good trade when you're generating leads rather than making claims.
 - **Hierarchical models (Module 9)** — worth considering as an *alternative* rather than an addition. Instead of adjusting thresholds after the fact, it shrinks extreme estimates toward the average, which removes most spurious extremes at the source.
 
 **None of these fix the deeper problem.** Corrections account for the tests you *ran*. They can't account for the tests you *would have* run if the data had looked different — the segments you'd have checked, the outlier rule you'd have chosen. Only deciding in advance fixes that.

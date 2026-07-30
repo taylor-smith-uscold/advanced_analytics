@@ -1,6 +1,6 @@
 # Small Groups, Thin Data: A Plain-Language Guide to Partial Pooling
 
-*Module 9 — plain-language register.*
+*Module 9 — plain-language register. How to estimate something for groups that barely have any data.*
 
 ---
 

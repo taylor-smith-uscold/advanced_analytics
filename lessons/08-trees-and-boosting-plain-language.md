@@ -1,6 +1,6 @@
 # Trees, Forests, and Boosting: A Plain-Language Guide
 
-*Module 8 — plain-language register.*
+*Module 8 — plain-language register. How tree models work, and which one to reach for on ordinary business data.*
 
 ---
 

@@ -1,6 +1,6 @@
 # Should We Ship This? A Plain-Language Guide to Fairness, Privacy, and Governance
 
-*Module 15 — plain-language register.*
+*Module 15 — plain-language register. How to decide whether a model is fit to ship.*
 
 ---
 
@@ -100,7 +100,7 @@ Three places to intervene:
 
 **Talk to legal before implementing any of these.** The set of things that work technically and the set of things you're allowed to do are different, and only the overlap is shippable.
 
-One distinction that helps in those conversations: **treating people differently because of a protected characteristic** is a different legal question from **a neutral rule that happens to affect groups differently.** Most ML fairness concerns are the second kind, where the question becomes whether the practice is justified and whether a less harmful alternative exists. Which means **documenting the alternatives you tried is legally useful**, not just good hygiene.
+One distinction that helps in those conversations: **treating people differently because of a protected characteristic** — the legal term is *disparate treatment* — is a different question from **a neutral rule that happens to affect groups differently**, which is *disparate impact*. Most ML fairness concerns are the second kind, where the question becomes whether the practice is justified and whether a less harmful alternative exists. Which means **documenting the alternatives you tried is legally useful**, not just good hygiene.
 
 ---
 

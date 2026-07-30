@@ -1,6 +1,6 @@
 # Did Anyone Act On It? A Plain-Language Guide to Communicating Analysis
 
-*Module 16 — plain-language register.*
+*Module 16 — plain-language register. How to report an analysis so that someone acts on it.*
 
 ---
 

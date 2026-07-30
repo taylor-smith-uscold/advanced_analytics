@@ -1,6 +1,6 @@
 # Does It Actually Work? A Plain-Language Guide to Causal Inference
 
-*How to tell whether something causes an outcome, or just travels alongside it.*
+*Module 2 — plain-language register. How to tell whether something causes an outcome, or just travels alongside it.*
 
 ---
 
@@ -148,6 +148,8 @@ Each one buys its answer with a different assumption. Pick the one whose assumpt
 **The idea:** find comparable untreated units and compare like with like.
 
 **Methods:** include controls in a regression, or match each treated unit to similar untreated ones, or weight units by how likely they were to be treated (propensity scores).
+
+There's also a combined approach worth asking your analysts about, usually called **doubly robust** estimation: it fits both a model of the outcome and a model of who gets treated, and gives the right answer as long as *at least one* of the two is right. You don't have to bet everything on a single specification, which is why it's become the default in careful work.
 
 **The assumption:** you measured everything that matters. Untestable, and usually the weakest link.
 

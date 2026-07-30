@@ -159,7 +159,7 @@ The capacity point deserves emphasis: it converts a classification problem into 
 
 ---
 
-## 8. Framing checklist
+## 8. Practical recipe
 
 1. **Name the decision, the decision-maker, and the alternatives.**
 2. **State the decision threshold** in business units, and the cost of each error type.
@@ -178,5 +178,5 @@ The capacity point deserves emphasis: it converts a classification problem into 
 - Kohavi, Tang & Xu, *Trustworthy Online Controlled Experiments*, ch. 6–7 — metric design, OECs, and guardrails from large-scale practice.
 - Manheim & Garrabrant (2018), "Categorizing variants of Goodhart's Law" — a precise taxonomy of the ways proxies fail under optimization.
 - Jacobs & Wallach (2021), "Measurement and fairness" — construct validity applied to ML measurement; the clearest treatment of the proxy gap.
-- Rose & Riolo, "The ML Test Score" (Breck et al., 2017) — a production readiness rubric that starts from framing and deployment constraints.
+- Breck, Cai, Nielsen, Salib & Sculley (2017), "The ML Test Score" — a production-readiness rubric that starts from framing and deployment constraints.
 - Hubbard, *How to Measure Anything* — value of information and decision-first framing, for the stakeholder conversation.
