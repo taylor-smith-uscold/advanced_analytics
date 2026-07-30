@@ -92,7 +92,7 @@ paper, linked here rather than mirrored.
 |---|---|---|
 | 01 | Problem Framing & Metric Design | Google, *Rules of Machine Learning*, rules 1–3 and 12–14 — <https://developers.google.com/machine-learning/guides/rules-of-ml> |
 | 02 | Causal Inference | Cunningham, *Causal Inference: The Mixtape*, ch. 3–4 — <https://mixtape.scunning.com/> |
-| 03 | Experimentation & A/B Testing | Kohavi et al., experimentation paper archive (CUPED, SRM, rules of thumb) — <https://exp-platform.com/> |
+| 03 | Experimentation & A/B Testing | Kohavi, Deng, Longbotham & Xu, *Seven Rules of Thumb for Web Site Experimenters* (KDD 2014) — <https://exp-platform.com/Documents/2014%20experimentersRulesOfThumb.pdf> · Deng, Xu, Kohavi & Walker, *Improving the Sensitivity of Online Controlled Experiments by Utilizing Pre-Experiment Data* (CUPED, WSDM 2013) — <https://exp-platform.com/Documents/2013-02-CUPED-ImprovingSensitivityOfControlledExperiments.pdf> · Fabijan et al., *Diagnosing Sample Ratio Mismatch in Online Controlled Experiments* (SRM, KDD 2019) — <https://exp-platform.com/Documents/2019_KDDFabijanGupchupFuptaOmhoverVermeerDmitriev.pdf> |
 
 ## Arc II — Getting the model right
 

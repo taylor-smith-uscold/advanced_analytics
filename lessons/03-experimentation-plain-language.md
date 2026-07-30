@@ -2,7 +2,11 @@
 
 *Module 3 — plain-language register. How to design an A/B test that gives you a real answer, and how to spot one that doesn't.*
 
-> **Required reading —** Kohavi et al., experimentation paper archive — CUPED, SRM, and the rules of thumb · [exp-platform.com](https://exp-platform.com/)
+> **Required reading —** three papers from the Kohavi et al. experimentation archive:
+>
+> - Kohavi, Deng, Longbotham & Xu, *Seven Rules of Thumb for Web Site Experimenters* (KDD 2014) · [PDF](https://exp-platform.com/Documents/2014%20experimentersRulesOfThumb.pdf)
+> - Deng, Xu, Kohavi & Walker, *Improving the Sensitivity of Online Controlled Experiments by Utilizing Pre-Experiment Data* — the CUPED paper (WSDM 2013) · [PDF](https://exp-platform.com/Documents/2013-02-CUPED-ImprovingSensitivityOfControlledExperiments.pdf)
+> - Fabijan, Gupchup, Gupta, Omhover, Qin, Vermeer & Dmitriev, *Diagnosing Sample Ratio Mismatch in Online Controlled Experiments* — the SRM taxonomy (KDD 2019) · [PDF](https://exp-platform.com/Documents/2019_KDDFabijanGupchupFuptaOmhoverVermeerDmitriev.pdf)
 
 ---
 
