@@ -2,6 +2,8 @@
 
 *Module 4 — plain-language register. How to tell whether your data means what you think it means.*
 
+> **Required reading —** van Buuren, *Flexible Imputation of Missing Data* (2e), ch. 1–2 · [stefvanbuuren.name/fimd](https://stefvanbuuren.name/fimd/)
+
 ---
 
 ## The short version

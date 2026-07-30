@@ -2,6 +2,8 @@
 
 *Module 7 — technical register. For readers who think in efficiency and purity, signal and background, and error bars.*
 
+> **Required reading —** ISLP ch. 4.4–4.5 · free PDF at [statlearning.com](https://www.statlearning.com/), plus the scikit-learn [calibration guide](https://scikit-learn.org/stable/modules/calibration.html)
+
 ---
 
 ## 0. The one-paragraph version

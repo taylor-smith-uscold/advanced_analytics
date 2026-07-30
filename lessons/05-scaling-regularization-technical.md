@@ -2,6 +2,8 @@
 
 *Module 5 — technical register. For readers who already think in units, normal modes, and Lagrange multipliers.*
 
+> **Required reading —** James, Witten, Hastie & Tibshirani, *An Introduction to Statistical Learning with Python* (ISLP), ch. 6 · free PDF at [statlearning.com](https://www.statlearning.com/)
+
 ---
 
 ## 0. The one-paragraph version

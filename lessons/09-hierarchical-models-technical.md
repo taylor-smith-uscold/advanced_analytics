@@ -2,6 +2,8 @@
 
 *Module 9 — technical register. For readers who have combined measurements by inverse-variance weighting.*
 
+> **Required reading —** Martin, Kumar & Lao, *Bayesian Modeling and Computation in Python*, ch. 4–5 · [bayesiancomputationbook.com](https://bayesiancomputationbook.com/welcome.html)
+
 ---
 
 ## 0. The one-paragraph version

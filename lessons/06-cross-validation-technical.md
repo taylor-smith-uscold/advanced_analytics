@@ -2,6 +2,8 @@
 
 *Module 6 — technical register. For readers comfortable with resampling, systematic errors, and blind analysis.*
 
+> **Required reading —** ISLP ch. 5 · free PDF at [statlearning.com](https://www.statlearning.com/)
+
 ---
 
 ## 0. The one-paragraph version

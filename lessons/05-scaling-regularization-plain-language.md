@@ -2,6 +2,8 @@
 
 *Module 5 — plain-language register. What these ideas are actually for, why they exist, and how they connect — no heavy math required.*
 
+> **Required reading —** James, Witten, Hastie & Tibshirani, *An Introduction to Statistical Learning with Python* (ISLP), ch. 6 · free PDF at [statlearning.com](https://www.statlearning.com/)
+
 ---
 
 ## The short version

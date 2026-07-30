@@ -2,6 +2,8 @@
 
 *Module 8 — plain-language register. How tree models work, and which one to reach for on ordinary business data.*
 
+> **Required reading —** ISLP ch. 8 · free PDF at [statlearning.com](https://www.statlearning.com/), plus XGBoost, [*Introduction to Boosted Trees*](https://xgboost.readthedocs.io/en/stable/tutorials/model.html)
+
 ---
 
 ## The short version

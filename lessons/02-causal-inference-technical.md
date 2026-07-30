@@ -2,6 +2,8 @@
 
 *Module 2 — technical register. For readers who understand the difference between observing a system and perturbing it.*
 
+> **Required reading —** Cunningham, *Causal Inference: The Mixtape*, ch. 3–4 · [mixtape.scunning.com](https://mixtape.scunning.com/)
+
 ---
 
 ## 0. The one-paragraph version

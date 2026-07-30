@@ -2,6 +2,8 @@
 
 *Module 13 — plain-language register. How to explain what a model is doing, and what those explanations don't mean.*
 
+> **Required reading —** Molnar, *Interpretable Machine Learning* · [christophm.github.io/interpretable-ml-book](https://christophm.github.io/interpretable-ml-book/)
+
 ---
 
 ## The short version

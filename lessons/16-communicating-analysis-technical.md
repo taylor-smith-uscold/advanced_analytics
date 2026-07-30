@@ -2,6 +2,8 @@
 
 *Module 16 — technical register. For readers who would rather be precise than persuasive, and need to be both.*
 
+> **Required reading —** Wilke, *Fundamentals of Data Visualization*, ch. 16 and 29 · [clauswilke.com/dataviz](https://clauswilke.com/dataviz/)
+
 ---
 
 ## 0. The one-paragraph version

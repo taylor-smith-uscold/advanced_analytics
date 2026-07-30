@@ -2,6 +2,8 @@
 
 *Module 11 — plain-language register. What an error bar is, and what it doesn't cover.*
 
+> **Required reading —** Angelopoulos & Bates, *A Gentle Introduction to Conformal Prediction* · [PDF](advanced_analytics_readings/11_angelopoulos_bates_conformal_prediction.pdf)
+
 ---
 
 ## The short version

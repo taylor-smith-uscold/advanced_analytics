@@ -2,6 +2,8 @@
 
 *Module 1 — plain-language register. What an analysis is for, and how to choose what to measure.*
 
+> **Required reading —** Google, *Rules of Machine Learning*, rules 1–3 and 12–14 · [developers.google.com](https://developers.google.com/machine-learning/guides/rules-of-ml)
+
 ---
 
 ## The short version

@@ -2,6 +2,10 @@
 
 *Module 15 — technical register. For readers who want the impossibility results stated precisely.*
 
+> **Required reading —** Barocas, Hardt & Narayanan, *Fairness and Machine Learning*, ch. 2–3 · [PDF](advanced_analytics_readings/15_barocas_hardt_narayanan_fairness_and_ml.pdf)
+>
+> **Exercise templates —** Mitchell et al., *Model Cards for Model Reporting* · [PDF](advanced_analytics_readings/15_mitchell_model_cards.pdf) — and Gebru et al., *Datasheets for Datasets* · [PDF](advanced_analytics_readings/15_gebru_datasheets_for_datasets.pdf)
+
 ---
 
 ## 0. The one-paragraph version

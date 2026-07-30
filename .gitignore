@@ -1,2 +1,9 @@
 .DS_Store
 .idea/
+
+# Free to download but NOT licensed for redistribution -- lessons link to the
+# publisher instead. See advanced_analytics_readings/READING_LIST.md.
+advanced_analytics_readings/14_sculley_hidden_technical_debt_in_ml.pdf
+
+# Scratch output from an earlier download_texts.sh run; not the curated list.
+backup_advanced_analytics_readings/

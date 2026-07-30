@@ -2,6 +2,8 @@
 
 *Module 12 — plain-language register. How to look for groups in data, and how to tell whether they're real.*
 
+> **Required reading —** ISLP ch. 12 · free PDF at [statlearning.com](https://www.statlearning.com/), plus Wattenberg et al., [*How to Use t-SNE Effectively*](https://distill.pub/2016/misread-tsne/)
+
 ---
 
 ## The short version

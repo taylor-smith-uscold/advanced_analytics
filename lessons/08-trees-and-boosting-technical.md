@@ -2,6 +2,8 @@
 
 *Module 8 — technical register. For readers who know that averaging independent measurements beats averaging correlated ones.*
 
+> **Required reading —** ISLP ch. 8 · free PDF at [statlearning.com](https://www.statlearning.com/), plus XGBoost, [*Introduction to Boosted Trees*](https://xgboost.readthedocs.io/en/stable/tutorials/model.html)
+
 ---
 
 ## 0. The one-paragraph version

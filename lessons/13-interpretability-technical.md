@@ -2,6 +2,8 @@
 
 *Module 13 — technical register. For readers who want to know what an attribution actually attributes.*
 
+> **Required reading —** Molnar, *Interpretable Machine Learning* · [christophm.github.io/interpretable-ml-book](https://christophm.github.io/interpretable-ml-book/)
+
 ---
 
 ## 0. The one-paragraph version

@@ -2,6 +2,8 @@
 
 *Module 14 — technical register. For readers who monitor a control channel because instruments drift.*
 
+> **Required reading —** Sculley et al., *Hidden Technical Debt in Machine Learning Systems* · free PDF via [NeurIPS proceedings](https://papers.nips.cc/paper_files/paper/2015/file/86df7dcfd896fcaf2674f757a2463eba-Paper.pdf)
+
 ---
 
 ## 0. The one-paragraph version

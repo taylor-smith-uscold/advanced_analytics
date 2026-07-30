@@ -2,6 +2,8 @@
 
 *Module 6 — plain-language register. How to tell whether a model will hold up on data it hasn't seen — no heavy math required.*
 
+> **Required reading —** ISLP ch. 5 · free PDF at [statlearning.com](https://www.statlearning.com/)
+
 ---
 
 ## The short version

@@ -2,6 +2,8 @@
 
 *Module 10 — technical register. For readers who have thought about spectra, stationarity, and autocorrelation.*
 
+> **Required reading —** Hyndman & Athanasopoulos, *Forecasting: Principles and Practice* (Python ed.), ch. 3, 5 and 8 · [otexts.com/fpppy](https://otexts.com/fpppy/)
+
 ---
 
 ## 0. The one-paragraph version

@@ -2,6 +2,8 @@
 
 *Module 10 — plain-language register. How to forecast, and how to tell whether the forecast is any good.*
 
+> **Required reading —** Hyndman & Athanasopoulos, *Forecasting: Principles and Practice* (Python ed.), ch. 3, 5 and 8 · [otexts.com/fpppy](https://otexts.com/fpppy/)
+
 ---
 
 ## The short version

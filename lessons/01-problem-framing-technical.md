@@ -2,6 +2,8 @@
 
 *Module 1 — technical register. For readers comfortable with estimands, loss functions, and expected utility.*
 
+> **Required reading —** Google, *Rules of Machine Learning*, rules 1–3 and 12–14 · [developers.google.com](https://developers.google.com/machine-learning/guides/rules-of-ml)
+
 ---
 
 ## 0. The one-paragraph version

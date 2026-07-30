@@ -2,6 +2,8 @@
 
 *Module 7 — plain-language register. How to report how well a model works — no heavy math required.*
 
+> **Required reading —** ISLP ch. 4.4–4.5 · free PDF at [statlearning.com](https://www.statlearning.com/), plus the scikit-learn [calibration guide](https://scikit-learn.org/stable/modules/calibration.html)
+
 ---
 
 ## The short version

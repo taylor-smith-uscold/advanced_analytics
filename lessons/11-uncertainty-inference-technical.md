@@ -2,6 +2,8 @@
 
 *Module 11 — technical register. For readers who consider a number without an uncertainty to be incomplete.*
 
+> **Required reading —** Angelopoulos & Bates, *A Gentle Introduction to Conformal Prediction* · [PDF](advanced_analytics_readings/11_angelopoulos_bates_conformal_prediction.pdf)
+
 ---
 
 ## 0. The one-paragraph version

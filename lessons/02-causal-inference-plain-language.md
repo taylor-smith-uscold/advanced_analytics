@@ -2,6 +2,8 @@
 
 *Module 2 — plain-language register. How to tell whether something causes an outcome, or just travels alongside it.*
 
+> **Required reading —** Cunningham, *Causal Inference: The Mixtape*, ch. 3–4 · [mixtape.scunning.com](https://mixtape.scunning.com/)
+
 ---
 
 ## The short version

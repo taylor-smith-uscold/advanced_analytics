@@ -2,6 +2,8 @@
 
 *Module 16 — plain-language register. How to report an analysis so that someone acts on it.*
 
+> **Required reading —** Wilke, *Fundamentals of Data Visualization*, ch. 16 and 29 · [clauswilke.com/dataviz](https://clauswilke.com/dataviz/)
+
 ---
 
 ## The short version

@@ -2,6 +2,8 @@
 
 *Module 9 — plain-language register. How to estimate something for groups that barely have any data.*
 
+> **Required reading —** Martin, Kumar & Lao, *Bayesian Modeling and Computation in Python*, ch. 4–5 · [bayesiancomputationbook.com](https://bayesiancomputationbook.com/welcome.html)
+
 ---
 
 ## The short version

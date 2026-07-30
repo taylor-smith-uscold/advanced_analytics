@@ -2,6 +2,8 @@
 
 *Module 4 — technical register. For readers who have debugged a detector before trusting its output.*
 
+> **Required reading —** van Buuren, *Flexible Imputation of Missing Data* (2e), ch. 1–2 · [stefvanbuuren.name/fimd](https://stefvanbuuren.name/fimd/)
+
 ---
 
 ## 0. The one-paragraph version
