@@ -232,7 +232,7 @@ The habit to import from physics: **no number without an uncertainty, and no com
 8. **Say what the test set was** — how it was split, whether it's temporally or demographically distinct, and whether it was used more than once.
 9. **Break performance down by subgroup.** Aggregate metrics hide failures concentrated in specific populations, which is both a scientific and an ethical problem.
 
-### Common failure modes
+## 8a. Failure modes
 
 | Symptom | What's actually going on |
 |---|---|

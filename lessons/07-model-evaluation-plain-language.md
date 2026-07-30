@@ -250,7 +250,7 @@ The habit worth building: **no number without an uncertainty, and no claim that 
 8. **Describe the test set** — how it was separated, whether it's from a different time or population, and how many times you looked at it.
 9. **Break the results down by subgroup.** An overall score can look fine while the model fails badly for a specific population. That's both a scientific problem and, often, an ethical one.
 
-### Common failure modes
+## Part 9: Warning signs
 
 | What you see | What's probably happening |
 |---|---|

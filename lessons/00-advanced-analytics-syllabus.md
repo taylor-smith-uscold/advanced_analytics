@@ -8,9 +8,11 @@
 
 1. Modules are organized around questions analysts are actually asked at work, not around a taxonomy of methods. Nothing is included because it is traditional.
 2. Each module is written twice: a technical register for readers with quantitative backgrounds, and a plain-language register for everyone else. Both cover the same arguments and the same failure modes, with different machinery.
-3. Every module closes with a table of failure modes. Read across the course, these accumulate into a diagnostic index, which is what people tend to reach for months later when something looks wrong.
+3. Every module closes with a table of failure modes, headed *Failure modes* in the technical register and *Warning signs* in the plain-language one. Read across the course, these accumulate into a diagnostic index, which is what people tend to reach for months later when something looks wrong.
 4. Causal reasoning is introduced early, because it reframes everything downstream. Analysts who learn prediction first often spend years reading causal claims into correlational models.
-5. Each module carries one applied exercise on company data rather than a teaching dataset.
+5. Each module carries one applied exercise, specified in the tables below. The exercises are written against live company data rather than a teaching dataset, so no data ships with the course: the syllabus supplies the brief, the instructor supplies the dataset and the stakeholder request.
+
+The **Applied exercise** column states what each exercise has to accomplish and what the participant should produce. It is a specification to be instantiated for your organization, not a worksheet to be handed out as written. Scoping the exercises against real requests is part of the preparation for running the course.
 
 ---
 
@@ -75,7 +77,7 @@ These are scoped but not yet written. Add them according to the work your teams 
 | **Cadence** | One module per week over 16 weeks, or three intensive blocks by arc |
 | **Session shape** | 45 minutes discussing the document, which is pre-read rather than lectured, followed by 45 minutes working the exercise on company data |
 | **Registers** | Everyone receives the plain-language version; the technical version is an optional deeper read. Let people choose rather than assigning them a track |
-| **Assessment** | The applied exercises, reviewed by peers. No exams |
+| **Assessment** | The applied exercises, once instantiated on your own data, reviewed by peers. No exams |
 | **Capstone** | Take one live business question end to end: frame it, identify the causal structure, design the test or model, validate it honestly, report it with uncertainty, and present it |
 
 ---
