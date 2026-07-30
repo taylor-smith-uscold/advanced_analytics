@@ -9,7 +9,7 @@ else is an author-published web book, linked here.
 |---|---|---|
 | 01 | Problem Framing & Metric Design | Google, *Rules of Machine Learning*, rules 1–3 and 12–14 — <https://developers.google.com/machine-learning/guides/rules-of-ml> |
 | 02 | Causal Inference | Cunningham, *Causal Inference: The Mixtape*, ch. 3–4 — <https://mixtape.scunning.com/> |
-| 03 | Experimentation & A/B Testing | Kohavi et al., experimentation paper archive (CUPED, SRM, rules of thumb) — <https://exp-platform.com/papers/> |
+| 03 | Experimentation & A/B Testing | Kohavi et al., experimentation paper archive (CUPED, SRM, rules of thumb) — <https://exp-platform.com/> |
 
 ## Arc II — Getting the model right
 

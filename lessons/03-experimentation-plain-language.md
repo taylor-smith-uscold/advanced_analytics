@@ -2,7 +2,7 @@
 
 *Module 3 — plain-language register. How to design an A/B test that gives you a real answer, and how to spot one that doesn't.*
 
-> **Required reading —** Kohavi et al., experimentation paper archive — CUPED, SRM, and the rules of thumb · [exp-platform.com](https://exp-platform.com/papers/)
+> **Required reading —** Kohavi et al., experimentation paper archive — CUPED, SRM, and the rules of thumb · [exp-platform.com](https://exp-platform.com/)
 
 ---
 

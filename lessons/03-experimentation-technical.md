@@ -2,7 +2,7 @@
 
 *Module 3 — technical register. For readers who have thought about counting statistics, systematic checks, and blind analysis.*
 
-> **Required reading —** Kohavi et al., experimentation paper archive — CUPED, SRM, and the rules of thumb · [exp-platform.com](https://exp-platform.com/papers/)
+> **Required reading —** Kohavi et al., experimentation paper archive — CUPED, SRM, and the rules of thumb · [exp-platform.com](https://exp-platform.com/)
 
 ---
 

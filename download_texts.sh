@@ -48,9 +48,12 @@ get () {
 echo "Downloading to: $OUT"
 echo ""
 
-get "05-08-12" "FREE" "islp_intro_statistical_learning_python.pdf" \
-  "https://www.statlearning.com/media/ISLP_website.pdf" \
-  "https://www.statlearning.com/"
+# ISLP (modules 05, 06, 07, 08, 12) is deliberately NOT downloaded. It is
+# [FREE] -- free to read, not licensed for redistribution -- so per the policy
+# above we link the publisher instead of mirroring the file. The old direct URL
+# (statlearning.com/media/ISLP_website.pdf) now 404s in any case; the book is
+# served through a Google Drive redirect that curl cannot follow unattended.
+echo "  - 05-08-12  ISLP  [FREE] link-only, see https://www.statlearning.com/"
 
 get "11" "CC" "angelopoulos_bates_conformal_prediction.pdf" \
   "https://arxiv.org/pdf/2107.07511" \
@@ -84,7 +87,7 @@ else is an author-published web book, linked here.
 |---|---|---|
 | 01 | Problem Framing & Metric Design | Google, *Rules of Machine Learning*, rules 1–3 and 12–14 — <https://developers.google.com/machine-learning/guides/rules-of-ml> |
 | 02 | Causal Inference | Cunningham, *Causal Inference: The Mixtape*, ch. 3–4 — <https://mixtape.scunning.com/> |
-| 03 | Experimentation & A/B Testing | Kohavi et al., experimentation paper archive (CUPED, SRM, rules of thumb) — <https://exp-platform.com/papers/> |
+| 03 | Experimentation & A/B Testing | Kohavi et al., experimentation paper archive (CUPED, SRM, rules of thumb) — <https://exp-platform.com/> |
 
 ## Arc II — Getting the model right
 
@@ -120,7 +123,7 @@ MD_EOF
 
 echo ""
 echo "-----------------------------------------------------"
-echo "PDFs downloaded:   $ok / 6"
+echo "PDFs downloaded:   $ok / 5"
 echo "Failed:            $failed"
 echo ""
 echo "Reading list for all 16 modules: $LIST"
