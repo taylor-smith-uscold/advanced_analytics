@@ -122,6 +122,10 @@ a{color:var(--accent);text-underline-offset:2px;}
   padding:7px 20px;cursor:pointer;border-left:2px solid transparent;
 }
 .mod:hover{background:var(--sunk);}
+a.mod{text-decoration:none;color:inherit;}
+.pill{font-family:var(--mono);font-size:9px;letter-spacing:.1em;text-transform:uppercase;
+  border:1px solid var(--rule-soft);border-radius:2px;padding:1px 5px;color:var(--faint);}
+a.mod:hover .pill{border-color:var(--accent);color:var(--accent);}
 .mod.on{border-left-color:var(--accent);background:var(--sunk);}
 .mod-n{font-family:var(--mono);font-size:11px;color:var(--faint);}
 .mod.on .mod-n{color:var(--accent);}
@@ -367,6 +371,11 @@ function buildRail(){
          + '<span class="regs"><i data-r="technical">T</i><i data-r="plain">P</i></span></div>';
     });
   });
+  h += '<div class="arc"><div class="arc-l">Reference</div><div class="arc-n">Course text</div></div>'
+     + '<a class="mod" href="resources/ISLP_website.pdf" target="_blank" rel="noopener">'
+     + '<span class="mod-n">&#8599;</span>'
+     + '<span class="mod-t">An Introduction to Statistical Learning</span>'
+     + '<span class="regs"><span class="pill">PDF</span></span></a>';
   h += '<div class="railfoot">'
      + 'Keys &nbsp;/ search &nbsp;· &nbsp;T register<br>[ &nbsp;prev module &nbsp;· &nbsp;] &nbsp;next module'
      + '</div>';
